@@ -1,7 +1,5 @@
-package com.example.topmovies;
+package com.example.topmovies.topmovies;
 
-
-import com.example.topmovies.topmovies.ViewModel;
 
 import io.reactivex.rxjava3.core.Observable;
 

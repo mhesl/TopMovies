@@ -1,4 +1,4 @@
-package com.example.topmovies;
+package com.example.topmovies.topmovies;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
@@ -6,12 +6,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.view.ViewGroup;
 
+import com.example.topmovies.R;
+
 import javax.inject.Inject;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class TopMoviesActivity extends AppCompatActivity {
+public class TopMoviesActivity extends AppCompatActivity implements TopMoviesActivityMVP.View{
 
     private final String TAG = TopMoviesActivity.class.getName();
 
@@ -30,5 +32,15 @@ public class TopMoviesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_top_movies);
 
         ButterKnife.bind(this);
+    }
+
+    @Override
+    public void updateData(ViewModel viewModel) {
+
+    }
+
+    @Override
+    public void showSnackBar(String s) {
+
     }
 }
